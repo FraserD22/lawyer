@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML5</title>
+  <style>
+    img {
+      width: 30%;
+      height: auto;
+    }
+    #wedding{
+      width: 50%;
+    }
+    table{
+      width: 100%;
+      color: red;
+    }
+    table,tr,td,th{
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+    th{
+      background-color: green;
+      color: white;
+    }
+    p {
+      font-family: Georgia;
+      font-size: 1em;
+    }
+    h1 {
+      font-variant: small-caps;
+    }
+    span{
+      font-weight: bold;
+    }
+    
+    
+
+    .emphasize
+    {
+      line-height: 30px;
+  
+    }
+    #container1
+    {
+      
+      width: 100%;
+      padding-right: 4px;
+      border-right: 2px solid black;
+      background-color: rgb(247, 209, 209);
+    }
+    #container2
+    {
+      
+      width: 100%;
+      padding-left: 7px;
+      padding-right: 7px;
+      background-color: rgb(196, 229, 145);
+     
+    
+    }
+    #container3
+    {
+      
+      width: 100%;
+      border-left: 2px solid black;
+      padding-left: 2px;
+      background-color: rgb(218, 213, 221);
+      margin-right: 1px;
+      background-image: url(VisaI1.jpeg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      
+    
+    }
+    .introdu {
+      color: white;
+      padding: 300px;
+      margin-top:5px;
+      height: 200px;
+      white-space: pre-wrap;
+      text-align: center;
+      background-image:linear-gradient(rgba(0,0,0,0.7), #3750c0), url(Generation.jpg);
+      background-size:cover ;
+      background-position: center top;
+      
+
+      
+      
+    }
+    .infos{
+      
+    
+      color: rgb(20, 19, 19);
+      font-size: 2em;
+      
+    }
+    #box{
+      margin-bottom: 50px;
+      padding-bottom: 5px;
+
+    }
+    .twitter-d{
+      width: 700px;
+      margin-right:100px;
+      display: flex;
+      flex-direction: row;
+  
+      
+      
+      
+    }
+    .twit-d{
+      
+      margin-right: 20px;
+      font-size: 70px;
+      color:blue;
+      transition: color 0.2s;
+      text-decoration: none;
+
+
+
+    }
+    .twit-d:hover{
+      color:red;
+
+    }
+    .fac-d{
+      font-size: 70px;
+      transition: color 0.2s;
+
+    }
+    .fac-d:hover{
+      color:red;
+    }
+    .yout-d{
+      font-size: 70px;
+      margin-left:20px;
+      transition: color 0.2s;
+    }
+    .yout-d:hover{
+      color:red
+    }
+    .container-I
+    {
+      
+      margin-bottom:10px;
+      padding-bottom:10px;
+    }
+    .instag-d{
+      font-size: 70px;
+      margin-left: 10px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .instag-d:hover {
+      color:red
+    }
+    .foot-d{
+      color:rgb(34, 177, 182)
+    }
+    
+    .email-D{
+      flex:right;
+      font-size:30px;
+    }
+    .contact-d{
+      position: absolute;
+      right: 0;
+      height: 50px;
+    }
+    .phone-D{
+      font-size: 30px;
+      margin-left: 20px;
+      flex:left;
+    }
+    .emphasize-A{
+      font-size: 50px;
+      background-image:url(family-immigration1.jpeg);
+    }
+    .emphasize-B{
+      background-image: url(Deportattion.jpeg);
+      width: 400px;
+      height: 400px;
+      background-position:center;
+      background-size: cover;
+      color:red;
+    }
+    P{
+      color:green;
+      font-size: 30px;
+
+    }
+    .Pay-E
+    {
+      display: flex;
+      align-items: right;
+      justify-content: right;
+
+     
+      
+    }
+    .express{
+      color: rgb(30, 30, 61);
+      font-size: 70px;
+      margin-right:10px;
+      cursor: pointer;
+    }
+    .express:hover{
+      color:green;
+    }
+    .pal{
+      color:rgb(24, 67, 117);
+      font-size: 70px;
+      margin-right:10px;
+      cursor: pointer;
+    }
+    .pal:hover{
+      color: green;
+    }
+    .masta{
+      color: rgb(240, 34, 34);
+      
+      font-size: 70px;
+      margin-right:10px;
+      cursor: pointer;
+    }
+    .masta:hover{
+      color: green;
+    }
+    .visa{
+      color:rgb(24, 67, 117);
+      font-size: 70px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .visa:hover{
+      color: green;
+    }
+    h2{
+    background-color: greenyellow;
+    }
+    .address{
+      background-color: honeydew;
+    }
+   
+    
+  
+    .Family1,
+    .Deport1,
+    .Visa1,
+    .Payments1,
+    .infos{
+      display: inline-block;
+      cursor: pointer;
+      padding-right: 10px;
+      
+    }
+    iframe{
+      filter: invert(100%);
+    }
+    h3{
+      color: rgb(53, 175, 53);
+      display: flex;
+      align-items: right;
+      justify-content: right;
+    }
+    .plus{
+      display: grid;
+      grid-template-columns: 200px 1fr;
+
+    }
+    .Submit {
+      height: 50px;
+      width: 50%;
+      color: royalblue;
+      padding: 10px;
+      font-size: 30px;
+      text-align: center;
+      cursor:pointer;
+      transition: 2s ease background-color;
+      border-radius: 20px;
+    }
+    .Submit:hover{
+      background-color: rgb(223, 61, 61);
+      color:rgb(53, 175, 53)
+    }
+  
+    .Pay{
+      margin-top:40px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+    }
+    .move{
+      position: fixed;
+      top:0;
+      left:0;
+      margin: 25px;
+      margin-top: 0;
+
+    }
+    
+
+
+  </style>
+   
+</head>
+<body style="padding-bottom: 500px; margin:25px">
+  <div class="move">
+    <div class= contact-d>
+      <p>Contact Us at <a class="email-D" href="mailto:fd371976@gmail.com">fd371976@gmail.com</a>
+      <a class="phone-D" href="tel:+16822725031">+16822725031</a></p>
+    </div>
+    <script src="https://kit.fontawesome.com/503515b860.js" crossorigin="anonymous"></script>
+    
+    <div id="box">
+    <p class="Home1" >
+    <a  href="home.html">Home</a>
+    </p>
+    
+    <p class="Practice1">
+      <a  href="Practice.html" target="_blank">Practice Areas</a></p>
+    <div class="container-I">
+    <p class="Family1" >
+    <a  href="family.html" target="_blank">Family Immigration</a>
+    </p>
+    <p class="Deport1" >
+     <a  href="Deportation.html" target="_blank"> Deportation Defense</a>
+    </p>
+    <p class="Visa1"  >
+    <a  href="visa applica.html" target="_blank">Visa Application </a></p>
+    
+    <p class="Payments1">
+
+    <a  href="Payments.html" target="_blank">Payments</a>
+
+    </p> 
+    <p class="infos" >
+    <a  href="form.html" >Booking Appointments</a>
+    </p>
+  </div>
+  </div>
+   
+    </div>
+    <h1 class="introdu">Your Right, Your Freedom, Your Future.Immigration Attorney For Dallas, Texas
+     
+    </h1>
+  
+    <div id="container1">
+    <a href="#Deportation">Deportation Defense</a><br/>
+    <a href="#Visa">Visa Application</a>
+
+    <a name="top"></a>
+  
+    <h1>Family Immgration</h1>
+    <h2>Reunification of Family</h2>
+    <p class="emphasize-A"> For many people, the easiest way to get a Us Immigration Visa or Green Card is through
+      family Sponsorship. Our local immigration lawyers Provide expert <mark>legal counsel </mark>for all aspects of family
+      -sponsored immigration.
+    </p>
+    <h2>For More infos Click the Link Below</h2>
+
+    <a href="https://www.uscis.gov"><img src="family-immigration1.jpeg" alt="family immigration"></a><br/>
+    <p>We can help you for <em>these Cases </em>Followings</p>
+    <ul type="square">
+      <li>Permanent Residence  applications for family members both in and outside the U.S.</li>
+      <li>Fiance petitions</li>
+      <li>Advance Parole/Permission to Travel</li>
+      <li>Employement Authorization</li>
+      <li>Consular Processing for Immigration and Nonimmigrant Visas</li>
+    </ul>
+    <label id="foods">Which Case Conserning about You</label><br/>
+    <input type="checkbox" name="cases" value="Permanent">Permanent Residence<br/>
+    <input type="checkbox" name="cases" value="Fiance">Fiance petitions<br/>
+    <input type="checkbox" name="cases" value="Employement">Employement Authorization<br/>
+    <input type="checkbox" name="cases" value="Advance">Advance Parole<br/>
+    <input type="checkbox" name="cases" value="Consular">Consular Processing for Nonimmigrant Visa<br/>
+    <label id="gender">Gender</label><br/>
+    <input type="radio" name="gender" value="male">male<br/>
+    <input type="radio" name="gender" value="female">female<br/>
+    <input type="radio" name="gender" value="other">other<br/>
+    <label id="cities">Cities</label><br/>
+  
+      <select id="cities" name="cities" size="3" multiple="multiple" >
+        <option value="Ottawa">Florida</option>
+        <option value="Dallas">Dallas</option>
+        <option value="Florida">Houston</option>
+        <option value="Sydney">Chicago</option>
+      </select><br/>
+      <input class="Submit" type="submit" value= "Send form"/>
+    </div>
+
+
+    <div id="container2">
+    <a name="Deportation"></a>
+    <h1>Deportation Defense</h1>
+      <p class="emphasize-B">
+        Individuals potentially subject to deportation  from the US Immigration
+        enforcement officers in many different ways. <span>Our immigration laywers</span> have tried hundreds of 
+        deportation cases in immigration courts throughout the Country.</p>
+    <h2>For More infos Click the Link Below</h2>
+    <p><a href="https://www.uscis.gov"><img src="Deportattion.jpeg" alt="Background Information"/></a><br/></p>
+    <p>Please Contact Us as soon as Posible</p>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend><mark>Personal Data</mark> </legend>
+      <lebal >First Name</lebal>
+      <input type="text" id="First"  name="First" required="required"/><br/>
+      <label>Last Name</label>
+      <input type="text" id="Last" name="Last" required="required"/><br/>
+      <label>Email</label>
+      <input type="email" id="email" name="email"
+      maxlength="10" autocomplete="off"/><br/>
+
+      <label>Phone</label>
+      <input type="phone" id="phone" name="phone number"/><br/>
+      <label>Comment</label>
+      <textarea>Provide All Idea</textarea><br/>
+
+      <h1>We can help you for these Cases Following </h1>
+      <ol type="square">
+        <li>Deportation or Removal Proceedings</li>
+        <li>Denial of Applicarions</li>
+        <li>Criminal Convictions</li>
+        <li>Appleals of Decisions</li>
+        <li>Consequences of being out-of-status</li>
+      </ol>
+
+    </fieldset>
+    <fieldset>
+      <legend><mark>CASES</mark></legend>
+      <label>SELECT ONE OF CASES</label> <br/>
+      <input id="cases" placeholder=" Cases Catagories" list="myCases"/>
+      <datalist id="myCases">
+      <option value="Criminal Convictions"/>
+      <option value=" Appleals of Decisions"/>
+      <option value=" Deportation"/>
+      </datalist><br/>
+      <label for="dob">Date of Birth</label>
+      <input type="datetime-local"  id="dob"><br/>
+      <label for="Quantites"> Quantites of Cases</label>
+      <input type="number" id="Quantites" min="0" max="10"><br/>
+    </fieldset>
+      <div class="Submit"><button type="Submit">Submit Me</button>
+      <button type="Reset">Reset</button><br/></div>
+    
+    </form>
+    </div>
+    <div id="container3">
+
+     <a name="Visa"></a>
+    <h1>Visa Application</h1>
+    <p class="emphasize-c"><blockquote>
+      There are many visas available to businesses and individuals,
+      and we will work with you to identify the options that best achieve
+      your business objectives. We represent investors, small business,
+      universities, and corporations
+      in Texas, Ohio, and around the world
+      </blockquote><cite>Eric D Fraser</cite></p>
+      
+      
+      <table>
+        <caption> All Visas Which I Help</caption>
+        <tr>
+          <th width="50%"">All Visa</th> <th>Requirements</th><th>Durations</th>
+        </tr>
+        <tr>
+          <td>Work Visa</td> <td><ul name="square"><li>Have a job offer in the US. You need to have applied for, and been accepted in a job position within the US in order to qualify for a work visa.</li>
+            <li>Approved petition by the US Citizenship and Immigration Services (USCIS) </li>
+            <li>Labor certification approval by the Department of Labor (DOL)</li></ul></td><td>Up to Three Years</td>
+        </tr>
+        <tr> 
+          <td><ol><li>Student Visa</li> <li>Tamporary Visa</li></ol></td> <td> A valid passport that is valid for at least six months beyond your period of stay in the US</td><td>60 days  after your graduation date</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Visitors Visa </td> <td> <ol><li>Completed DS-160 application form.</li>
+            <li>Your passport with at least one blank page to be able to affix visa.</li>
+            <li>One photograph fulfilling the requirements set by the U.S authorities.</li>
+            <li>Proof of having paid transit visa fees.</li>
+            <li>Interview confirmation page and its copy.</li></ol></td><td>6 months</td>
+        </tr>
+        <tr> 
+          <td><ul ><li>Proof of having paid transit visa fees.</li>
+            <li>Interview confirmation page and its copy.</li></ul></td><td>The US Tourist Visa (B-1/B-2) is a non-immigrant US Visa. Its validity period ranges from 1 month to 10 years and allows single</td>
+        </tr>
+      </table>
+      <p class:More>For More Details Please Watch this Video</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sGSYUPUBdqw?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+      <br/>
+      <!--writting the orginal link of this video -->
+      <a href="https://www.uscis.gov">Do More Research </a>
+      </div>
+  
+      <div class="Container-w">
+      <div class=address>
+      <p>Other Lawyers Offices Adresses</p>
+      <ol  start="10">
+        <li> <a href="http://www.FloridaImmigrationOffice.com">Florida</a> Green Hope</li>
+        <li> <a href="http://www.DallasImmigration.com"> Dallas</a> Give Back Hope</li>
+        <li> <a href="http://www.HoustonImmigration.com"<strong>Houston</strong>&nbsp;</a>Hope Firm</li>
+        <li> <a href="http://www.NewYorkImmigration.com">Newyork</a> Innovation Hope</li> <br/>
+      </ol>
+    </div>
+      
+      <div class="map">
+        <h1>Our Dallas Office</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26808.518024544373!2d-96.77189941863358!3d32.87000612549763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9f8bc6d3ca8b%3A0x62ef827d12df0cb9!2s8620%20Park%20Ln%2C%20Dallas%2C%20TX%2075231!5e0!3m2!1sen!2sus!4v1651173247666!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+      </div>
+      <div class="Pay">
+      <div style=" font-weight: bold; font-size: 30px;margin-right:100px;">Follow Us on</div>
+      <div style=" font-weight: bold; font-size: 30px; color: green;"> Method Payments, Free Consultation</div>
+      </div>
+      <div class="plus">
+    <div class="twitter-d">
+      <a class="twit-d" href="https://twitter.com/EricD83655108" target="_blank">
+      <i class="fa-brands fa-twitter-square"></i>
+      </a>
+     <a class="fac-d" href="https:/facebook.com//EricFraser" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+     <a class="yout-d" href="https://youtube.com/Constance Nsimire" target="_blank"><i class="fa-brands fa-youtube-square"></i></a>
+     <a class="instag-d" href="https://instagram.com/akin Bunkechukwu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+   <div  class="Pay-E">
+  <div class="visa"><i class="fa-brands fa-cc-visa"></i></div>
+  <div class="masta"><i class="fa-brands fa-cc-mastercard"></i></div>
+  <div class="pal"><i class="fa-brands fa-cc-paypal"></i></div>
+  <di class="express"><i class="fa-brands fa-cc-amex"></i></div>
+  </div>
+</div>
+  <footer>
+    <p>Copyright &copy;2022.<span class="foot-d">Dallas Immigration Lawyer ERIC D .Immigration Attorney</span>.All Rights Reserved</p>
+  </footer>
+  <a href="#Top">Top</a>
+</div>
+</div>
+    
+  
+  
+  
+</body>
+</html>

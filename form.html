@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/503515b860.js" crossorigin="anonymous"></script>
+  
+  <title>Form</title>
+  <style>
+    form{
+      width: 100%;
+      
+    
+    }
+    .input-group{
+      margin-top: 30px;
+      position: relative;
+      padding-right: 30px;
+      
+    }
+    input, textarea{
+      width: 100%;
+      padding: 10px;
+      outline: 0px;
+      border: 2px solid  rgba(32, 11, 221, 0.616);
+      color:rgb(17, 12, 12);
+      background:transparent;
+      font-size: 20px;
+    }
+    label{
+      position:absolute;
+      left:0;
+      top:0;
+      padding-bottom: 20px;
+      color:rgb(3, 48, 13);
+      cursor: text;
+      transition: 0.5s;
+
+    }
+    button {
+      padding:10px 0;
+      color:rgb(44, 44, 6);
+      font-weight: bold;
+      outline: none;
+      background:transparent;
+      border:1px solid rgb(200,0,100);
+      width: 100%;
+      cursor:pointer
+      
+    
+    
+
+    }
+    
+    .row{
+      
+      justify-content: space-between;
+
+    }
+    .row.input-group{
+      flex-basis: 48%;
+    }
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label
+    {
+      top: -35px;
+      font-size: 14px;
+    }
+
+
+
+  
+  </style>
+</head>
+<body>
+  
+  <form action:melto:info@fd371976@gmail.com method="post" enctype="text/plain">
+  <fieldset>
+    
+  <div class="row">
+  <div class="input-group">
+  <label for="firstName"><i class="fa-solid fa-user"></i>First Name</label>
+  <input type="text" id="First" name="firstName" required="required"><br/>
+  </div>
+  <div class="input-group">
+  <label for="Last"><i class="fa-solid fa-user"></i>Last Name</label>
+  <input type="text" id="Last" name="LastName" required ="required"><br/>
+  </div>
+  </di>
+  <div class="input-group" >
+  <label for=""><i class="fas fa-envelope"></i>Email</label>
+  <input type="email" id="email" name="email" required="required"><br/>
+  </div>
+  <div class="input-group">
+  <label for="yourPhone"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
+  <input type="number" id="phone" name="yourPhone" ><br/>
+  </div>
+  <div class="input-group">
+  <label><i class="fas fa-comments"></i>Explain Your Case</label>
+  <textarea></textarea><br/>
+  </div>
+  <div class="input-group">
+  <button>SUBMIT<i class="fas fa-paper-plane"></i></button><br/>
+   </div>
+  </fieldset>
+  </form>
+</body>
+</html>
